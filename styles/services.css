@@ -1,0 +1,126 @@
+/* main styling */
+main {
+    flex-direction: row;
+}
+
+section h1 {
+    font-size: 300%;
+    margin: 5px 15px;
+}
+
+/* services styling */
+.servicecard {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid darkblue;
+    margin: 5px 15px;
+    border-radius: 5px;
+}
+
+.serviceinfo {
+    margin: auto 15px auto 30px;
+}
+
+.serviceimg {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.serviceimg img {
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 5px 30px 5px 10px;
+}
+
+/* styling for aside boat list */
+aside {
+    border-left: 1px dotted black;
+}
+
+aside h2 {
+    font-size: 200%;
+    text-align: center;
+}
+
+.boatoption {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(0, 0, 75);
+    margin: 5px 15px;
+    border-radius: 5px;
+}
+
+.boatoption h3 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 110%;
+}
+
+.boatoption p {
+    font-size: 80%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.boatimg {
+    max-width: 70%;
+    height: auto;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 5px 0;
+}
+
+/* media queries */
+@media (max-width: 830px) {
+    main {
+        flex-direction: column;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    main aside {
+        border-left: None;
+        width: 100%;
+    }
+}
+
+@media (max-width: 565px) {
+    .servicecard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviceimg {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .serviceimg img {
+        max-width: 40%;
+        margin: 1em auto;
+    }
+
+    .boatimg {
+        max-height: 30vh;
+    }
+
+    .serviceinfo {
+        margin: auto 15px auto 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .serviceimg {
+        flex-direction: column;
+    }
+
+    .serviceimg img {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,75 @@
+/* Styling for main */
+main h2 {
+    font-size: 250%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 175%;
+    margin: 25px 0 0 60px;
+}
+
+p {
+    font-size: 100%;
+    margin: 10px 60px;
+}
+
+h4 {
+    font-size: 110%;
+    margin: 10px 0 0 60px;
+}
+
+/* Styling newsletter sign up */
+.newsletter {
+    border: 5px solid darkblue;
+    border-radius: 10px;
+    max-width: 60vw;
+    align-self: center;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter h5 {
+    text-align: center;
+    font-size: 150%;
+}
+
+.newsletter p {
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    width: 70px;
+    height: 30px;
+    background-color: aliceblue;
+    font-weight: bold;
+}
+
+/* media queries */
+@media (max-width: 600px) {
+    main h3 {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    main h4 {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    main p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .newsletter {
+        max-width: 95vw;
+    }
+}

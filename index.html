@@ -1,36 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucci's Boating</title>
+    <title>Home - Lucci's Boating</title>
+
+    <link rel="shortcut icon" href="images/boatfavicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
+    <!-- header -->
     <header>
+        <a href="index.html"><img src="images/lucciboatlogo.jpg" alt="Lucci's Boating Logo"></a>
         <h2>Lucci's Boating</h2>
-        <h3>Under Construction</h3>
     </header>
+
+    <!-- button for nav menu toggle on mobile -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+
+    <!-- nav bar and nav bar links -->
+    <nav id="nav_menu" class="nav_menu" data-visible="false">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="education.html">Educational Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
     <main>
-        <p>This will be a site for a fictional company that focuses on boating. They offer boat rentals as well as boat tours on the Hudson River. Below is a list of different things that will be included in the company's website.</p>
-        <ul>
-            <li>Home Page: Provides an overview of what the company is and what it does.</li>
-            <li>Education Page: Provides pictures and descriptions of the different types of boats that the company owns and uses for it's services.</li>
-            <li>Services Page: Provides a more in-depth description of the services offered by the company; includes what exactly the rented boats can be used for and what exactly the boat tours include. May discuss pricing, etc.</li>
-            <li>About Section: Provides a brief history of the company and what it's values are, as well as contact information.</li>
-        </ul>
-        <p>Additional features in the website will include:</p>
-        <ul>
-            <li>Media queries to adjust to different size screens</li>
-            <li>A footer with an automatically-updating copyright year</li>
-            <li>Proper formatting that is consistent across the pages</li>
-            <li>A "back to top" button at the bottom of the webpages</li>
-            <li>Navigation bar, aside sections, etc</li>
-        </ul>
+        <!-- fancy extra header -->
+        <div id="explore">
+            <h3>Use our boats to explore the Hudson River today!</h3>
+            <a href="services.html"><button>Our Services</button></a>
+        </div>
+        <!-- description of website and overall boating -->
+        <div class="section">
+            <div class="sectiontext">
+                <h3>The Beauty of Boating</h3>
+                <p>The beauty of boating lies in its quiet blend of freedom and serenity, where the open water stretches
+                    endlessly and time seems to slow with each gentle ripple. Whether gliding across a glassy lake at
+                    sunrise or cutting through ocean waves under a bright afternoon sky, boating offers a unique escape
+                    from
+                    the noise of everyday life. The rhythmic sound of water against the hull, the feel of fresh air, and
+                    the
+                    ever-changing horizon create a calming, almost meditative experience. It’s a space where adventure
+                    and
+                    peace coexist—where one moment can bring thrilling speed and the next, stillness and
+                    reflection—making
+                    every journey on the water feel both personal and timeless.</p>
+            </div>
+            <img src="images/boatingbeauty.jpg" alt="Beautiful boat" class="sectionimg">
+        </div>
+        <div class="section">
+            <img src="images/boatfishing.webp" alt="Fishing from boat" class="sectionimg">
+            <div class="sectiontext">
+                <h3>Boats Have So Many Purposes!</h3>
+                <p>Boats serve a wide range of purposes, making them incredibly versatile tools on the water. They can
+                    be
+                    used for transportation, whether it’s commuting across a harbor, traveling between islands, or
+                    carrying
+                    goods over long distances. Many people use boats for recreation, such as fishing, water skiing, or
+                    simply cruising to relax and enjoy the scenery. They also play important roles in professional
+                    settings,
+                    supporting activities like commercial fishing, marine research, tourism, and rescue operations. From
+                    small personal kayaks to large cargo ships, boats adapt to countless needs, blending practicality
+                    with
+                    enjoyment in ways few other forms of transportation can match.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="sectiontext">
+                <h3>Why Choose Us?</h3>
+                <p>Choosing Lucci’s Boating means opting for a company that prioritizes both experience and reliability
+                    on
+                    the water. With a strong focus on customer satisfaction, Lucci’s Boating offers well-maintained
+                    vessels,
+                    knowledgeable staff, and flexible options tailored to different needs—whether you’re planning a
+                    relaxing
+                    day trip, a fishing excursion, or a special event. Unlike larger, impersonal companies, they
+                    emphasize a
+                    more personalized approach, taking the time to ensure each customer feels comfortable and confident
+                    before setting out. Combined with competitive pricing and a reputation for professionalism, Lucci’s
+                    Boating stands out as a dependable choice for anyone looking to make the most of their time on the
+                    water.</p>
+            </div>
+            <img src="images/happyfamily.jpeg" alt="Happy family on boat" class="sectionimg">
+        </div>
+        <!-- list of events -->
+        <div id="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <h3>Sunset Harbor Cruise Night</h3>
+                    <p>A relaxed evening ride with music, snacks, and scenic views as the sun sets over the water.</p>
+                    <img src="images/sunsetcruise.webp" alt="Sunset Cruise" class="eventimg">
+                    <h4>Date: May 2nd, 2026 at 6:00 PM - 9:00 PM</h4>
+                </li>
+                <li>
+                    <h3>Beginner’s Fishing Tournament</h3>
+                    <p>A friendly, low-pressure competition designed for newcomers, with guidance, prizes, and a fun
+                        social atmosphere.</p>
+                    <img src="images/fishingtournament.jpg" alt="Fishing Tournament" class="eventimg">
+                    <h4>Date: May 9th, 2026 - time TBD</h4>
+                </li>
+                <li>
+                    <h3>Riverside Town-Hopping Day Trip</h3>
+                    <p>A guided excursion where guests visit multiple nearby towns, with time for exploring and
+                        picnicking.</p>
+                    <img src="images/townhopping.jpg" alt="Boat in harbor" class="eventimg">
+                    <h4>Date: May 16th, 2026 at 9:00 AM - 5:00 PM</h4>
+                </li>
+            </ul>
+            <p id="eventsignup">To RSVP for events Call (518) 555-7429 or Email EVENTS@LUCCISBOATING.COM</p>
+        </div>
     </main>
     <footer>
-
+        <p>&copy; <span id="copyrightyear"></span> Lucci's Boating Inc.</p>
     </footer>
 </body>
+
 </html>
+
+<script src="js/scripts.js"></script>
